@@ -54,12 +54,18 @@
     right: 45px;
 }
 
+.search_btn {
+    padding: 0;
+    border: none;
+}
+
 .search_search-icon {
     width: 25px;
     height: 25px;
     position: absolute;
     top: 27px;
     right: 15px;
+    cursor: pointer;
 }
 
 .image-container {
