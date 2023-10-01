@@ -52,11 +52,7 @@
     position: absolute;
     top: 27px;
     right: 45px;
-}
-
-.search_btn {
-    padding: 0;
-    border: none;
+    cursor: pointer;
 }
 
 .search_search-icon {
