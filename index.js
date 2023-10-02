@@ -40,6 +40,10 @@ async function getData() {
  searchIcon.addEventListener('click', function() {
     searchWord = searchText.value;
     console.log(searchWord);
+    const images = document.querySelectorAll('.gallery-img');
+    images.forEach((el) => {
+        el.classList.add('nonactive');
+    })
     dynamicURL = `https://api.unsplash.com/search/photos?query=${searchWord}&per_page=30&orientation=landscape&client_id=mN3eeA-5RHLHn6zS9_tetXDagPa1NweYkcwJicCW8Xo`;
     console.log(dynamicURL);
     searchData();
@@ -50,6 +54,10 @@ async function getData() {
         e.preventDefault();
         searchWord = searchText.value;
         console.log(searchWord);
+        const images = document.querySelectorAll('.gallery-img');
+        images.forEach((el) => {
+            el.classList.add('nonactive');
+        })
         dynamicURL = `https://api.unsplash.com/search/photos?query=${searchWord}&per_page=30&orientation=landscape&client_id=mN3eeA-5RHLHn6zS9_tetXDagPa1NweYkcwJicCW8Xo`;
         console.log(dynamicURL);
         searchData();
